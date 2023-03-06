@@ -1,0 +1,60 @@
+@import url('./global.css');
+body{
+    min-height: 100vh;
+    background-color: var(--cream);
+}
+main{
+    overflow-x: hidden;
+    font-family: var(--font02);
+    font-weight: 500;
+    height: 550px;
+    width: 365px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    text-align: left;
+
+}
+
+#img{
+    display: block;
+    height: 250px;
+    background-image: url('../images/image-product-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+h1{
+    font-size: 2em;
+    font-family: var(--font01);
+    font-weight: 700;
+    color: var(--vDarkBlue);
+}
+span{
+    text-decoration: line-through;
+}
+#price{
+    color: var(--darkCyan);
+    display: inline-block;
+    
+}
+button{
+    width: 200px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    background-color: var(--darkCyan);
+    color: white;
+    border-radius: 5px;
+    border: 0px;;
+}
+p, h1, span{
+    margin: 5px 25px;
+}
+main p, span{
+    color: var(--dGBlue);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
