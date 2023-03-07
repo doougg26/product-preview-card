@@ -26,14 +26,12 @@ main{
 }
 
 h1{
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: var(--font01);
     font-weight: 700;
     color: var(--vDarkBlue);
 }
-span{
-    text-decoration: line-through;
-}
+
 #price{
     color: var(--darkCyan);
     display: inline-block;
@@ -52,7 +50,7 @@ button{
 p, h1, span{
     margin: 5px 25px;
 }
-main p, span{
+main p, del{
     color: var(--dGBlue);
 }
 
