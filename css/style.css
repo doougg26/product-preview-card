@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    overflow-x: hidden;
+  
     font-family: var(--font02);
     font-weight: 500;
     height: 550px;
@@ -18,7 +18,7 @@ main {
 
 }
 
-#img {
+.img {
     display: block;
     height: 250px;
     background-image: url('../images/image-product-desktop.jpg');
@@ -35,28 +35,29 @@ h1 {
 }
 
 article p:nth-child(1){
+letter-spacing: 3px;
 text-transform: uppercase; 
 }
 
-#price {
+.price {
+    font-size: 1.5em;
+    font-family: var(--font01);
     color: var(--darkCyan);
     display: inline-block;
 
 }
 
 button {
-    width: 200px;
+    width: 150px;
     height: 40px;
-    display: block;
-    margin: auto;
     background-color: var(--darkCyan);
     color: white;
     border-radius: 5px;
     border: 0px;
-    ;
+    
 }
 
-p, h1 {
+main p, h1, button {
     margin: 5px 25px;
 }
 
@@ -64,18 +65,18 @@ main p, del {
     color: var(--dGBlue);
 }
 
-.attribution {
+footer {
     font-size: 11px;
     text-align: center;
 }
 
-.attribution a {
+footer a {
     color: hsl(228, 45%, 44%);
 }
 
 @media screen and (min-width: 600px) {
 
-    #img {
+    .img {
 
         width: 50%;
         height: 100%;
@@ -94,7 +95,7 @@ main p, del {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 40vw;
-        height: 60vh;
+        width: 70vw;
+
     }
 }
