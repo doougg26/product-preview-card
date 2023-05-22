@@ -1,9 +1,11 @@
 @import url('./global.css');
-body{
+
+body {
     min-height: 100vh;
     background-color: var(--cream);
 }
-main{
+
+main {
     overflow-x: hidden;
     font-family: var(--font02);
     font-weight: 500;
@@ -16,7 +18,7 @@ main{
 
 }
 
-#img{
+#img {
     display: block;
     height: 250px;
     background-image: url('../images/image-product-desktop.jpg');
@@ -25,19 +27,24 @@ main{
     background-position: center center;
 }
 
-h1{
+h1 {
     font-size: 1.5em;
     font-family: var(--font01);
     font-weight: 700;
     color: var(--vDarkBlue);
 }
 
-#price{
+article p:nth-child(1){
+text-transform: uppercase; 
+}
+
+#price {
     color: var(--darkCyan);
     display: inline-block;
-    
+
 }
-button{
+
+button {
     width: 200px;
     height: 40px;
     display: block;
@@ -45,36 +52,49 @@ button{
     background-color: var(--darkCyan);
     color: white;
     border-radius: 5px;
-    border: 0px;;
+    border: 0px;
+    ;
 }
-p, h1, span{
+
+p, h1 {
     margin: 5px 25px;
 }
-main p, del{
+
+main p, del {
     color: var(--dGBlue);
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-@media screen and (min-width: 600px){
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
 
-#img{
-    
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+
+    #img {
+
         width: 50%;
         height: 100%;
         float: left;
-    
-}    
-article{
-    float: left;
-    width: 50%;
-}
-main{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40vw;
-    height: 60vh;
-}
+
+    }
+
+    article {
+        float: right;
+        width: 50%;
+        margin-top: 10%;
+    }
+
+    main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40vw;
+        height: 60vh;
+    }
 }
