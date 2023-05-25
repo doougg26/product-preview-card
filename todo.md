@@ -1,1 +1,2 @@
--[solve the 'footer top' problem]
+-[solve the 'footer top' problem] ✅
+-[reposition of the main content]
