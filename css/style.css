@@ -1,10 +1,17 @@
 @import url('./global.css');
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     min-height: 100vh;
     background-color: var(--cream);
 }
 
+.nada{
+    height: 5vh;
+}
 main {
   
     font-family: var(--font02);
@@ -12,7 +19,6 @@ main {
     height: 550px;
     width: 365px;
     background-color: white;
-    margin: auto;
     border-radius: 10px;
     text-align: left;
     overflow-x: hidden;
@@ -79,6 +85,12 @@ footer a {
 
 @media screen and (min-width: 600px) {
 
+    body{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .img {
 
         width: 50%;
@@ -98,7 +110,8 @@ footer a {
         top: 50%;
         left: 50%;
         /* transform: translate(-50%, -50%); */
-        width: 40vw;
+        width: 500px;
+        height: 400px;
 
     }
 }
